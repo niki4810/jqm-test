@@ -10,7 +10,7 @@ function ResizePageContentHeight(page) {
 	$content.height(wh - (hh + fh) - (pt + pb));
 }
 
-$( document ).delegate("#scrollViewPage", "pageinit", function(event) {
+$( document ).delegate("#scrollViewPage", "pageshow", function(event) {
 	var $page = $( ":jqmData(role='page')" );
 
 	// For the demos that use this script, we want the content area of each
